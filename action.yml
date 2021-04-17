@@ -23,5 +23,5 @@ runs:
       shell: bash
     - run: chmod +x chkk
       shell: bash
-    - run: ${{ github.workspace }}/chkk -f ${{ inputs.kubernetes-manifest }} -s ${{ inputs.skip-check }} -r ${{ inputs.run-check }} ${{ inputs.args }}
+    - run: ${{ github.workspace }}/chkk -f ${{ inputs.kubernetes-manifest }} -s ${{ inputs.skip-checks }} -r ${{ inputs.enable-checks }} ${{ inputs.args }}
       shell: bash
